@@ -1,0 +1,25 @@
+.userReviews {
+  padding-top: 63px;
+  padding-bottom: 70px;
+  @include tablet-p {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  @include tablet-l {
+    padding-top: 50px;
+  }
+  @include desktop {
+    padding-top: 87px;
+    padding-bottom: 80px;
+  }
+
+  &__socialBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet-l {
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+  }
+}

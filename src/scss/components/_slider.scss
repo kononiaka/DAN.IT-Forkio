@@ -1,0 +1,106 @@
+.slider {
+  &__sl {
+    box-sizing: border-box;
+    cursor: grab;
+    margin: 0 5px;
+
+    &:focus {
+      cursor: grabbing;
+      outline: none;
+    }
+  }
+
+  &__slick {
+    width: 204px;
+    height: 395px;
+    margin: 0 25px;
+    @include tablet-p {
+      width: 326px;
+      height: 232px;
+    }
+    @include tablet-l {
+      width: 568px;
+      height: 232px;
+    }
+    @include desktop {
+      height: 210px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    color: #333333;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+
+  &__time {
+    font-size: 16px;
+    color: $grey;
+    text-align: center;
+  }
+
+  &__userName {
+    color: $purple;
+  }
+
+  &__userWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 23px;
+    @include tablet-p {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__groupName {
+    color: $purple;
+    text-align: center;
+    @include tablet-p {
+      text-align: left;
+    }
+  }
+
+  &__userFullName {
+    font-size: 24px;
+    color: #474747;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 7px;
+    @include tablet-p {
+      text-align: left;
+    }
+  }
+
+  &__userPic {
+    margin-bottom: 25px;
+    @include tablet-p {
+      margin-right: 23px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__next,
+  &__prev {
+    display: block;
+    font-size: 18px;
+    color: #b3b3b3;
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    @include tablet-p {
+      margin-bottom: 57px;
+    }
+  }
+
+}

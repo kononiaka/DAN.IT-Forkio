@@ -1,0 +1,37 @@
+.callback {
+  background-color: $section-grey;
+  padding-top: 30px;
+  padding-bottom: 42px;
+
+  &__heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: $heading-dark;
+    margin-bottom: 39px;
+  }
+}
+
+@media screen and (min-width: 401px) {
+  .callback {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__heading {
+      font-size: 28px;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .callback {
+    padding: 46px 80px;
+
+    &__heading {
+      display: inline-block;
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+  }
+}

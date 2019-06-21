@@ -1,0 +1,57 @@
+.presentation {
+  margin-bottom: 88px;
+
+  &__heading {
+    font-size: 26px;
+    line-height: 42px;
+    color: $purple;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 130px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__description {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323232;
+    font-family: $lato;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 401px) {
+  .presentation {
+    &__heading {
+      font-size: 36px;
+      line-height: 48px;
+    }
+    &__description {
+      font-size: 16px;
+      line-height: 26px;
+      padding: 0px;
+    }
+  }
+}
+@media screen and (min-width: 481px) {
+  .presentation {
+    font-size: 42px;
+
+    &__description {
+      font-size: 21px;
+      line-height: 32px;
+      padding: 0 40px;
+    }
+  }
+}
+@media screen and (min-width: 993px) {
+  .presentation {
+    font-size: 54px;
+    line-height: 20px;
+
+    &__description {
+      padding: 0 125px;
+    }
+  }
+}

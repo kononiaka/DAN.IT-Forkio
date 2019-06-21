@@ -1,0 +1,23 @@
+// SCREEN SIZES
+// 0 - 400px     Phone
+// 401 - 480px   Tablet portrait
+// 481 - 992px   Tablet landscape
+// 993 - 1200px  Desktop
+
+@mixin tablet-p {
+  @media screen and (min-width: 401px) {
+    @content;
+  }
+}
+
+@mixin tablet-l {
+  @media screen and (min-width: 481px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 993px) {
+    @content;
+  }
+}

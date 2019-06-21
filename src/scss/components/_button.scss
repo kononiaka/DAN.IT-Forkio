@@ -1,0 +1,97 @@
+.button {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: $purple;
+  border-radius: 29px;
+  border: 1px solid $purple;
+  transition: 0.3s;
+
+  &--callback {
+    padding: 9px 31px;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 50px;
+  }
+
+  &--buy {
+    font-size: 15px;
+    padding: 10px 19px;
+  }
+
+  &--download {
+    padding: 13px 45px;
+    position: relative;
+    bottom: -20px;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: $purple;
+    border: 1px solid #8d81ac;
+  }
+  
+  &--purchase {
+    font-weight: 400;
+    background: $med-white;
+    text-transform: uppercase;
+    padding: 16px 37px;
+    border: 1px solid transparent;
+    margin-top: auto;
+
+    &:hover {
+      font-weight: 700;
+      border: 1px solid transparent;
+      background-color: $strong-white;
+      color: $grey;
+    }
+  }
+}
+
+@media screen and (min-width: 401px) {
+  .button {
+    &--buy {
+      padding: 12px 23px;
+      font-size: 17px;
+    }
+
+    &--download {
+      font-size: 21px;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .button {
+    &--buy {
+      font-size: 16px;
+      padding: 10px 0;
+      width: 145px;
+    }
+
+    &--download {
+      padding: 13px 45px;
+      position: relative;
+      bottom: -20px;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .button {
+    &--callback {
+      margin: 0;
+    }
+
+    &--buy {
+      font-size: 16px;
+      padding: 12px 0px;
+    }
+
+    &--download {
+      padding: 13px 45px;
+      position: relative;
+      bottom: -20px;
+    }
+  }
+}

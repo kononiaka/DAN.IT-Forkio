@@ -1,0 +1,29 @@
+// in this file there only must be import declarations
+
+// abstract
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// base
+@import "base/reset";
+@import "base/base";
+
+// components
+@import "components/container";
+@import "components/navbar";
+@import "components/button";
+@import "components/logo";
+@import "components/form";
+@import "components/github_button";
+@import "components/social_button";
+@import "components/slider";
+
+// layouts
+@import "layout/header";
+@import "layout/footer";
+@import "layout/callback";
+@import "layout/app_features";
+@import "layout/presentation";
+@import "layout/mediaReviews";
+@import "layout/prices";
+@import "layout/user_reviews";

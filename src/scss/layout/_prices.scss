@@ -1,0 +1,130 @@
+.prices {
+  background-image: url(/src/img/prices/Prices_layer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__heading {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 25px;
+    margin-bottom: 53px;
+    text-align: center;
+  }
+}
+.subsPlan {
+  background-image: url(/src/img/prices/Prices_layer_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 257px;
+    height: 437px;
+    color: #fff;
+    background: $light-white;
+    margin: 0 10px 25px;
+    align-items: center;
+    padding-bottom: 38px;
+    &--active {
+      background-color: rgba(0, 0, 0, 0.288);
+      width: 280px;
+      height: 522px;
+      & .subsPlan__header {
+        background-color: rgba(0, 0, 0, 0.103);
+      }
+      & .subsPlan__price {
+        font-size: 82px;
+      }
+    }
+  }
+  &__header {
+    background: $med-white;
+    width: 100%;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 40px 0 32px;
+    text-align: center;
+  }
+  &__price {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 32px 0 24px;
+  }
+  &__period {
+    display: block;
+    color: $strong-white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 39px;
+    &:after {
+      content: "";
+      display: block;
+      width: 70%;
+      height: 5px;
+      background-color: $purple;
+      margin: 31px auto 0;
+    }
+  }
+  &__feature {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  &__summary {
+    display: none;
+    font-family: $lato;
+    font-size: 14px;
+    line-height: 21px;
+    color: $violet;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+}
+@media screen and (min-width: 401px) {
+  .prices {
+    &__heading {
+      font-size: 42px;
+      line-height: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .prices {
+    &__heading {
+      padding-top: 80px;
+    }
+  }
+  .subsPlan {
+    justify-content: center;
+    &__item {
+      &--active {
+        width: 299px;
+        height: 522px;
+      }
+    }
+    &__summary {
+      display: block;
+      margin: 50px 156px 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .subsPlan {
+    justify-content: flex-start;
+    &__item {
+      margin-top: 45px;
+      &--active {
+        margin-top: 0;
+        transform: scale(1);
+        width: 299px;
+        height: 522px;
+      }
+    }
+  }
+}

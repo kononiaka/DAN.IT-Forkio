@@ -1,0 +1,162 @@
+.footer {
+  color: $grey;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  margin-left: 8px;
+  margin-right: 8px;
+
+  &__navLink {
+    font-size: 15px;
+    line-height: 23px;
+    color: $purple;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px solid $purple;
+    }
+  }
+
+  &__section {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 36px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__heading {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #323232;
+    margin-bottom: 23px;
+  }
+
+  &__phone {
+    color: #31384d;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__time {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+  }
+
+  &__address {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (min-width: 401px) {
+  .footer {
+    padding-top: 28px;
+    padding-bottom: 39px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    &__text {
+      &--narrow {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  // footer section
+  .footer {
+    padding-top: 54px;
+    padding-bottom: 0;
+    margin-left: 28px;
+    margin-right: 28px;
+
+    &__section {
+      width: 47%;
+    }
+
+    &:last-child {
+      padding-bottom: 36px;
+    }
+
+    &__text {
+      &--narrow {
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .footer {
+    padding-top: 59px;
+    padding-bottom: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+    &__navItem {
+      line-height: 23px;
+    }
+
+    &__navLink {
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    &__section {
+      padding-bottom: 0;
+
+      &--logo {
+        width: 31%;
+      }
+
+      &--nav {
+        width: 15%;
+      }
+
+      &--contacts {
+        width: 23%;
+      }
+
+      &--info {
+        width: 23%;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 21px;
+
+      &--narrow {
+        max-width: 100%;
+      }
+    }
+
+    &__phone {
+      color: #31384d;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    &__time {
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 38px;
+    }
+
+    &__address {
+      font-size: 14px;
+      line-height: 23px;
+    }
+  }
+}

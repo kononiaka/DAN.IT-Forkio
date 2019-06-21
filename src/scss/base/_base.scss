@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,500,700");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #27262a;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  width: 10px;
+  background: $purple;
+}

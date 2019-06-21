@@ -1,0 +1,10 @@
+.navbar {
+  background-color: $dark-grey;
+}
+@media screen and (min-width: 481px) {
+  .navbar {
+    &__menuIcon {
+      display: none;
+    }
+  }
+}

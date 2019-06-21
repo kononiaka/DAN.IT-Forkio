@@ -1,0 +1,149 @@
+.appFeatures {
+  position: relative;
+  overflow: hidden;
+  padding-top: 34px;
+  padding-bottom: 6px;
+  background-color: $section-grey;
+  @include tablet-p {
+    padding-top: 47px;
+    padding-bottom: 22px;
+  }
+  @include tablet-l {
+    padding-top: 54px;
+  }
+  @include desktop {
+    padding-top: 84px;
+    padding-bottom: 33px;
+  }
+
+  &__heading {
+    color: $purple;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 34px;
+    @include tablet-p {
+      font-size: 42px;
+      line-height: 54px;
+      margin-bottom: 68px;
+    }
+    @include tablet-l {
+      margin-bottom: 60px;
+    }
+    @include desktop {
+      font-size: 48px;
+      margin-bottom: 29px;
+    }
+  }
+
+  &__heading1 {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__heading2 {
+    display: none;
+    text-align: left;
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &__options {
+    @include desktop {
+      flex: 0 0 40%;
+      width: 40%;
+      margin-right: 115px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 38px;
+    @include tablet-p {
+      flex-direction: row;
+      margin-bottom: 46px;
+      align-items: flex-start;
+    }
+    @include tablet-l {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__icon {
+    &Container {
+      flex: 0 0 133px;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+      margin-bottom: 29px;
+      padding-right: 20px;
+      @include tablet-p {
+        height: 100%;
+        margin-bottom: 0;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  &__itemHeading {
+    font-size: 16px;
+    color: $heading-dark;
+    text-align: center;
+    margin-bottom: 21px;
+    @include tablet-p {
+      margin-bottom: 18px;
+      text-align: left;
+    }
+    @include tablet-l {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__itemDescription {
+    font-family: $lato;
+    text-align: center;
+    color: $grey;
+    font-size: 14px;
+    line-height: 21px;
+    @include tablet-p {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  &__appImg {
+    height: 381px;
+    margin-left: 5px;
+    position: absolute;
+    left: 0;
+    @include tablet-p {
+      height: 519px;
+      margin-left: 12px;
+    }
+    @include desktop {
+      left: -34px;
+    }
+  }
+
+  &__imgPlaceholder {
+    height: 381px;
+    width: 100%;
+    @include tablet-p {
+      height: 519px;
+    }
+    @include desktop {
+      position: relative;
+    }
+  }
+
+  &__searchIcon {
+    position: relative;
+    left: 12px;
+  }
+}
